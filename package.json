@@ -1,0 +1,44 @@
+{
+  "name": "nails.js",
+  "version": "1.0.0",
+  "description": "nails saloon",
+  "main": "index.js",
+  "scripts": {
+    "build": "webpack --mode production",
+    "dev": "webpack serve --mode development --hot --open",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/NikitaKiryaev-web/mesto.git"
+  },
+  "author": "Nikita Kiryaev",
+  "license": "ISC",
+  "homepage": "https://NikitaKiryaev-web.github.io/mesto",
+  "devDependencies": {
+    "@babel/core": "^7.12.10",
+    "@babel/preset-env": "^7.12.11",
+    "autoprefixer": "^10.1.0",
+    "babel-loader": "^8.2.2",
+    "clean-webpack-plugin": "^3.0.0",
+    "css-loader": "^5.2.7",
+    "cssnano": "^5.1.14",
+    "gh-pages": "^3.1.0",
+    "html-webpack-plugin": "^4.5.0",
+    "mini-css-extract-plugin": "^1.3.3",
+    "node-sass": "^8.0.0",
+    "postcss-loader": "^4.1.0",
+    "sass-loader": "^13.2.0",
+    "webpack": "^5.11.1",
+    "webpack-cli": "^4.3.1",
+    "webpack-dev-server": "^4.11.1"
+  },
+  "dependencies": {
+    "@popperjs/core": "^2.11.6",
+    "bootstrap": "^5.2.3",
+    "core-js": "^3.8.1",
+    "jquery": "^3.6.3",
+    "popper": "^1.0.1"
+  }
+}

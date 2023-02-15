@@ -1,0 +1,33 @@
+@import "~bootstrap/scss/bootstrap";
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300;400&display=swap");
+
+body {
+  background-color: #fff;
+  font-family: "Lato";
+  font-size: 15px;
+  font-weight: 400;
+  padding: 15px;
+}
+
+#header .outlined-ul {
+  li {
+    position: relative;
+    &::before {
+      content: "";
+      width: 0%;
+      height: 2px;
+      background-color: #000;
+      top: 100%;
+      position: absolute;
+    }
+    &:hover::before {
+      transition: 0.3s;
+      width: 100%;
+    }
+  }
+}
+
+.hover:hover {
+  transition: 0.3s;
+  opacity: 0.6;
+}
