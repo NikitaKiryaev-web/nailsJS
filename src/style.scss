@@ -52,6 +52,47 @@ body {
   }
 }
 
+.price-list {
+  background-color: #d9d9d9;
+}
+
+#swiper-section {
+  position: relative;
+  width: 50%;
+  margin: auto;
+}
+
+.swiper {
+  height: auto;
+  &-slide {
+    width: 159px !important;
+  }
+  &-button-next {
+    right: -40px !important;
+    &::after {
+      background-image: url("./assets/images/arrow-right.png");
+      font-size: 0 !important;
+      width: 10px;
+      height: 11px;
+      background-size: cover;
+    }
+  }
+  &-button-prev {
+    left: -40px !important;
+    &::after {
+      background-image: url("./assets/images/arrow-left.png");
+      font-size: 0 !important;
+      width: 10px;
+      height: 11px;
+      background-size: cover;
+    }
+  }
+}
+
+.card {
+  min-width: 113px;
+}
+
 .hover:hover {
   transition: 0.3s;
   opacity: 0.6;

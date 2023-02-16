@@ -83,11 +83,11 @@
         </div>
       </section>
 
-      <section id="about" class="px-4">
+      <section id="about" class="px-4 mb-5">
         <h2 class="text-dark fs-4 m-0 mb-5">Обо мне</h2>
         <div class="d-flex flex-column flex-md-row align-items-center justify-content-center">
-          <img class="mb-5 me-md-5" width="115" src="<%=require('./assets/images/ava.png')%>" alt="Avatar">
-          <p class="about-text fs-5">
+          <img class="mb-5 me-md-5 mb-md-0" width="115" src="<%=require('./assets/images/ava.png')%>" alt="Avatar">
+          <p class="about-text fs-5 m-0">
             Привет! Познакомимся?<br/>
 Меня зовут Ксения, я очень люблю преображать ваши ручки<br/>
 Стаж работы 3 года.<br/>
@@ -95,6 +95,63 @@
 Жду тебя с твоими ноготочками!
           </p>
         </div>
+      </section>
+
+      <section id="price-list" class="price-list pb-4 w-100 pt-3 mb-5">
+        <h2 class="text-dark fs-4 m-0 mb-5 ps-4">Прайс</h2>
+        <div class="cards d-flex flex-column flex-md-row mx-auto justify-content-center align-items-center">
+          <div class="card ps-3 pe-4 py-4 rounded-0 mb-5 mb-md-0 me-md-5">
+              <p class="card-title fs-5 mb-5">услуга</p>
+              <p class="card-price fs-5">цена</p>
+          </div>
+          <div class="card ps-3 pe-4 py-4 rounded-0 mb-5 mb-md-0 me-md-5">
+            <p class="card-title fs-5 mb-5">услуга</p>
+            <p class="card-price fs-5">цена</p>
+        </div>
+        <div class="card ps-3 pe-4 py-4 rounded-0">
+          <p class="card-title fs-5 mb-5">услуга</p>
+          <p class="card-price fs-5">цена</p>
+      </div>
+        </div>
+      </section>
+
+      <section id="swiper-section">
+        <div class="swiper">
+          <!-- Additional required wrapper -->
+          <div class="swiper-wrapper">
+            <!-- Slides -->
+            <div class="swiper-slide">
+              <img class="swiper-img" src="<%=require('./assets/images/work_example.png')%>" alt="work-example">
+            </div>
+            <div class="swiper-slide">
+              <img class="swiper-img" src="<%=require('./assets/images/work_example.png')%>" alt="work-example">
+            </div>
+            <div class="swiper-slide">
+              <img class="swiper-img" src="<%=require('./assets/images/work_example.png')%>" alt="work-example">
+            </div>
+            <div class="swiper-slide">
+              <img class="swiper-img" src="<%=require('./assets/images/work_example.png')%>" alt="work-example">
+            </div>
+            <div class="swiper-slide">
+              <img class="swiper-img" src="<%=require('./assets/images/work_example.png')%>" alt="work-example">
+            </div>
+            <div class="swiper-slide">
+              <img class="swiper-img" src="<%=require('./assets/images/work_example.png')%>" alt="work-example">
+            </div>
+            <div class="swiper-slide">
+              <img class="swiper-img" src="<%=require('./assets/images/work_example.png')%>" alt="work-example">
+            </div>
+            <div class="swiper-slide">
+              <img class="swiper-img" src="<%=require('./assets/images/work_example.png')%>" alt="work-example">
+            </div>
+            <div class="swiper-slide">
+              <img class="swiper-img" src="<%=require('./assets/images/work_example.png')%>" alt="work-example">
+            </div>
+          </div>
+        </div>
+        <!-- If we need navigation buttons -->
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
       </section>
     </main>
 </body>
