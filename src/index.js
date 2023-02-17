@@ -16,6 +16,6 @@ const swiper = new Swiper(".swiper", {
     prevEl: ".swiper-button-prev",
   },
   slidesPerView: "auto",
-  slidesPerGroupAuto: "auto",
-  spaceBetween: 40,
+  spaceBetween: 30,
+  centeredSlides: true,
 });

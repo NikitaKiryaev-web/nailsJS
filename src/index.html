@@ -16,7 +16,7 @@
           </button>
         </div>
         <div class="collapse w-100" id="navbarToggleExternalContent">
-            <div class="p-4 w-100 bg-opacity-10 bg-black d-flex flex-column justify-content-center align-items-center">
+            <div class="p-4 w-100 bg-opacity-10 border-bottom border-dark d-flex flex-column justify-content-center align-items-center">
               <h2 class="text-dark fs-2 m-0">Ксения Станиславовна</h2> 
               <p class="text-dark m-0 mb-2 fs-5">специалист по маникюру</p>
               <ul class="outlined-ul list-unstyled d-flex flex-column align-items-center">
@@ -25,6 +25,23 @@
                 <li class="hover"><a href="#" class="fs-5 text-dark text-decoration-none">Мои работы</a></li>
                 <li class="hover"><a href="#" class="fs-5 text-dark text-decoration-none">Акции</a></li>
                 <li class=""><a href="#" class="fs-5 text-dark text-decoration-none">Контакты</a></li>
+              </ul>
+              <ul class="list-unstyled d-flex justify-content-center justify-content-md-start mb-0 w-100">
+                <li class="me-2 hover">
+                  <a href="#">
+                    <img src="<%=require('./assets/images/vk_logo.png')%>" alt="VK">
+                  </a>
+                </li>
+                <li class="me-2 hover">
+                  <a href="#">
+                    <img src="<%=require('./assets/images/inst_logo.png')%>" alt="Inst">
+                  </a>
+                </li>
+                <li class="hover">
+                  <a href="#">
+                    <img src="<%=require('./assets/images/tg_logo.png')%>" alt="Tg">
+                  </a>
+                </li>
               </ul>
             </div>
           </div>
@@ -115,11 +132,11 @@
         </div>
       </section>
 
-      <section id="swiper-section">
+      <section id="swiper-section" class="mb-5">
+        <h2 class="text-dark fs-4 m-0 mb-5 ps-4">Мои работы</h2>
+        <div class="position-relative w-50 mx-auto">
         <div class="swiper">
-          <!-- Additional required wrapper -->
           <div class="swiper-wrapper">
-            <!-- Slides -->
             <div class="swiper-slide">
               <img class="swiper-img" src="<%=require('./assets/images/work_example.png')%>" alt="work-example">
             </div>
@@ -149,10 +166,51 @@
             </div>
           </div>
         </div>
-        <!-- If we need navigation buttons -->
         <div class="swiper-button-prev"></div>
         <div class="swiper-button-next"></div>
+      </div>
+      <button class="swiper-show-more mx-auto d-block mt-4 fw-light fs-6 border-0 bg-transparent text-decoration-underline p-0">
+        Больше работ
+      </button>
       </section>
+
+      <section id="promotions">
+        <h2 class="text-dark fs-4 m-0 mb-5 ps-4">Акции</h2>
+        <div class="d-flex flex-column flex-md-row justify-content-center align-items-center">
+          <img class="promotion-img mb-5 mb-md-0 me-md-5" src="<%=require('./assets/images/work_example.png')%>" alt="promotion">
+          <img class="promotion-img" src="<%=require('./assets/images/work_example.png')%>" alt="promotion">
+        </div>
+      </section>
+
+      <footer id="footer">
+        <h2 class="text-dark fs-4 m-0 mb-5 ps-4">Контакты</h2>
+        <div class="d-flex flex-column flex-md-row align-items-center w-75 mx-auto">
+          <div class="footer-contacts text-center text-md-start w-75 mx-auto">
+            <p class="mb-1 fs-5 lh-1">Адрес:</p>
+            <p class="mb-4 fs-5 lh-1">текстекстекстекстет</p>
+
+            <p class="mb-1 fs-5 lh-1">Телефон:</p>
+            <p class="mb-5 fs-5 lh-1">8912345678</p>
+
+            <ul class="list-unstyled d-flex justify-content-center justify-content-md-start mb-4 mb-md-0">
+              <li class="me-2 hover">
+                <img src="<%=require('./assets/images/vk_logo.png')%>" alt="VK">
+              </li>
+              <li class="me-2 hover">
+                <img src="<%=require('./assets/images/inst_logo.png')%>" alt="Inst">
+              </li>
+              <li class="hover">
+                <img src="<%=require('./assets/images/tg_logo.png')%>" alt="Tg">
+              </li>
+            </ul>
+          </div>
+          <div class="footer-map">
+            <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3Ac7e61e9717fd7681b13e31ba477e8a612113e40a7e2ce805abb2c88906834376&amp;source=constructor"
+            width="340" height="240" frameborder="0">
+          </iframe>
+          </div>
+        </div>
+      </footer>
     </main>
 </body>
 </html>
