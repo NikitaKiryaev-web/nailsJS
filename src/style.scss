@@ -1,8 +1,8 @@
 @import "~bootstrap/scss/bootstrap";
-@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300;400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300;400;900&display=swap");
 
 body {
-  background-color: #fff;
+  background-color: rgba(255, 217, 220, 0.92);
   font-size: 15px;
   font-weight: 400;
   padding: 15px 0;
@@ -30,33 +30,81 @@ body {
   }
 }
 
+.section-title {
+  position: relative;
+  &::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 105%;
+    height: 2px;
+    width: 164px;
+    background-color: rgba(179, 159, 122, 0.88);
+  }
+  &-light {
+    &::after {
+      content: "";
+      position: absolute;
+      left: 0;
+      top: 105%;
+      height: 2px;
+      width: 164px;
+      background-color: rgba(255, 217, 220, 0.92);
+    }
+  }
+}
+
 .banner {
   &-wrapper {
-    background-image: url("./assets/images/banner_example.png");
+    background-image: url("./assets/images/banner.png");
     aspect-ratio: 239/71;
-    background-size: 100% 100%;
+    background-size: cover;
     background-position: center;
     padding: 46px;
   }
   &-content {
     max-width: 383px;
   }
+  &-title {
+    font-weight: 900;
+    color: #fff;
+    text-shadow: 1px 1px 1px #000;
+  }
   &-btn {
-    width: 135px;
+    width: 148px;
     height: 43px;
     padding: 0;
     border: none;
-    background: rgba(250, 42, 42, 0.87);
+    background: rgb(250, 42, 42);
+    opacity: 0.87;
     color: #000;
     &:hover {
-      opacity: 0.8;
+      opacity: 0.6;
       transition: 0.3s;
     }
   }
 }
 
 .price-list {
-  background-color: #d9d9d9;
+  position: relative;
+  background-image: url(./assets/images/price-bg.png);
+  background-size: cover;
+  min-height: 341px;
+  margin-bottom: 150px;
+  @media (max-width: 768px) {
+    margin-bottom: 1100px;
+  }
+}
+
+.price-cards {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.price-red {
+  color: #f83637;
+  font-weight: 500;
 }
 
 .swiper {
@@ -94,7 +142,14 @@ body {
 }
 
 .card {
-  min-width: 113px;
+  min-width: 179px;
+  max-width: 179px;
+  min-height: 354px;
+  background: rgba(255, 217, 220, 0.92);
+  border: 1px solid #887164;
+  &-title {
+    min-height: 89px;
+  }
 }
 
 .hover:hover {
@@ -104,8 +159,10 @@ body {
 
 #promotions {
   margin-bottom: 95px;
-  .promotion-img {
-    width: 290px;
-    height: auto;
+  .promotion {
+    background-color: #d8bcac;
+    border: 2px solid #000000;
+    width: 276px;
+    height: 180px;
   }
 }
